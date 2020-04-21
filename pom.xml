@@ -7,7 +7,8 @@
 	<packaging>war</packaging>
 	<name>Hello World Java EE</name>
 	<description>Learn Java JSP and Servlet</description>
-
+	<finalName>${project.artifactId}</finalName>
+	
 	<dependencies>
 		<dependency>
 			<groupId>javax.servlet</groupId>
