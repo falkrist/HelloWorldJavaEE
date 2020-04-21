@@ -7,8 +7,7 @@
 	<packaging>war</packaging>
 	<name>Hello World Java EE</name>
 	<description>Learn Java JSP and Servlet</description>
-	<finalName>${project.artifactId}</finalName>
-	
+
 	<dependencies>
 		<dependency>
 			<groupId>javax.servlet</groupId>
@@ -41,6 +40,7 @@
 				<configuration>
 					<warSourceDirectory>WebContent</warSourceDirectory>
 					<failOnMissingWebXml>false</failOnMissingWebXml>
+					<warName> ${artifactId} </warName>
 				</configuration>
 			</plugin>
 		</plugins>
