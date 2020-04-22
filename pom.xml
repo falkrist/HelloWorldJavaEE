@@ -7,9 +7,7 @@
 	<packaging>war</packaging>
 	<name>Hello World Java EE</name>
 	<description>Learn Java JSP and Servlet</description>
-	<build>
-    <finalName>WhatEverYouLikey</finalName>
-  </build>
+
 	<dependencies>
 		<dependency>
 			<groupId>javax.servlet</groupId>
@@ -42,21 +40,9 @@
 				<configuration>
 					<warSourceDirectory>WebContent</warSourceDirectory>
 					<failOnMissingWebXml>false</failOnMissingWebXml>
-					<finalName>${artifactId}</finalName>
+					<finalName>helloworld</finalName>
 				</configuration>
 			</plugin>
-			<plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-ear-plugin</artifactId>
-        <version>3.0.2</version>
-        <configuration>
-           <modules>
-             <ejbModule>
-               <artifactId>${project.artifactId}</artifactId>
-             </ejbModule>
-          </modules>
-        </configuration>
-      </plugin>
 		</plugins>
 	</build>
 </project>
