@@ -40,7 +40,7 @@
 				<configuration>
 					<warSourceDirectory>WebContent</warSourceDirectory>
 					<failOnMissingWebXml>false</failOnMissingWebXml>
-					<finalName>${project.artifactId}</finalName>
+					<finalName>${artifactId}</finalName>
 				</configuration>
 			</plugin>
 			<plugin>
@@ -51,7 +51,7 @@
            <modules>
              <ejbModule>
                <artifactId>${project.artifactId}</artifactId>
-               <bundleFileName>${project.artifactId}</bundleFileName>
+               <bundleFileName>${artifactId}</bundleFileName>
              </ejbModule>
           </modules>
         </configuration>
