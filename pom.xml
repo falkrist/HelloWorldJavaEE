@@ -51,7 +51,7 @@
            <modules>
              <ejbModule>
                <artifactId>${project.artifactId}</artifactId>
-               <finalFileName>${artifactId}</finalFileName>
+               <finalFileName>helloworld</finalFileName>
              </ejbModule>
           </modules>
         </configuration>
