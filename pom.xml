@@ -42,6 +42,7 @@
 				<configuration>
 					<warSourceDirectory>WebContent</warSourceDirectory>
 					<failOnMissingWebXml>false</failOnMissingWebXml>
+					<outputFileNameMapping>@{groupId}@-@{artifactId}@---@{baseVersion}@@{dashClassifier?}@.@{extension}@</outputFileNameMapping>
 				</configuration>
 			</plugin>
 		</plugins>
