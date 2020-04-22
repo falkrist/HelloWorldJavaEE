@@ -40,7 +40,7 @@
 				<configuration>
 					<warSourceDirectory>WebContent</warSourceDirectory>
 					<failOnMissingWebXml>false</failOnMissingWebXml>
-					<warName> ${artifactId} </warName>
+					<finalName>helloworld</finalName>
 				</configuration>
 			</plugin>
 		</plugins>
