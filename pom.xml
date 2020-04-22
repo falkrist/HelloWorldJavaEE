@@ -44,13 +44,18 @@
 				</configuration>
 			</plugin>
 			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-ear-plugin</artifactId>
-				<version>3.0.2</version>
-				<configuration>
-		 			<outputFileNameMapping>@{artifactId}@</outputFileNameMapping>
-				</configuration>
-			</plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-ear-plugin</artifactId>
+        <version>3.0.2</version>
+        <configuration>
+           <modules>
+             <ejbModule>
+               <artifactId>${project.artifactId}</artifactId>
+               <bundleFileName>${project.artifactId}</bundleFileName>
+             </ejbModule>
+          </modules>
+        </configuration>
+      </plugin>
 		</plugins>
 	</build>
 </project>
